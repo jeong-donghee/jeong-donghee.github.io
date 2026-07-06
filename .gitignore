@@ -30,3 +30,6 @@ assets/js/dist
 *~
 .DS_Store
 Thumbs.db
+
+# GitHub Actions 빌드에선 불필요. 루트에 있으면 레거시 브랜치 배포가 원본을 그대로 서빙함
+/.nojekyll
