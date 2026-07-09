@@ -1,0 +1,21 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* TOC(오른쪽 목차): 하위 항목(H3)이 접히지 않고 항상 보이게 — tocbot 접힘 무력화 */
+#toc .toc-list.is-collapsed,
+#toc .toc-list.is-collapsible {
+  max-height: none !important;
+}
