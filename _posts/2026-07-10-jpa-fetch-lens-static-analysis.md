@@ -13,7 +13,7 @@ Entity간 연관 관계 매핑과 쿼리를 읽어 엔티티들의 실제 로딩
 N+1 발생을 미리 알아채는 데 도움이 됩니다.<br>
 Spring Data JPA Repository 메서드에 hover하면 기존 메서드 설명에 더해 JPA Fetch Lens 트리가 뜹니다.
 
-![repository 메서드에 hover하면 뜨는 fetch 트리](https://cdn.jsdelivr.net/gh/jeong-donghee/jpa-fetch-lens@main/docs/shot-full.png)
+![repository 메서드에 hover하면 뜨는 fetch 트리](https://cdn.jsdelivr.net/gh/jeong-donghee/jpa-fetch-lens@main/docs/shot-fetch.png)
 _repository 메서드에 hover하면 실제로 이렇게 뜬다._
 
 - <span style="background:#43A047;color:#fff;padding:1px 8px;border-radius:4px;font-weight:600;">초록</span> = 이 쿼리가 당김(`join fetch` / `@EntityGraph`)
