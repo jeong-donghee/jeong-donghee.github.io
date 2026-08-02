@@ -52,7 +52,13 @@ script_includes:
         </div>
       {% endif %}
 
-      {%- comment -%} author / pageviews / read-time 제거 (커스텀) {%- endcomment -%}
+      {%- comment -%} author / read-time 는 숨김(커스텀). 조회수만 표시. {%- endcomment -%}
+      {% if site.pageviews.provider and site.analytics[site.pageviews.provider].id %}
+        <span>
+          <em id="pageviews"><i class="fas fa-spinner fa-spin small"></i></em>
+          {{ site.data.locales[lang].post.pageview_measure }}
+        </span>
+      {% endif %}
     </div>
   </header>
 
